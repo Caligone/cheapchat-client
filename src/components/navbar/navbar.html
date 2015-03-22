@@ -1,0 +1,20 @@
+<nav class="navbar navbar-default" role="navigation" ng-controller="NavbarCtrl">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <a class="navbar-brand" href="#/">CheapChat</a>
+  </div>
+  <div class="collapse navbar-collapse" id="navbar-collapse-01">
+    <ul class="nav navbar-nav">
+      <li><a href="#/">About</a></li>
+      <li><a href="#/">Contact</a></li>
+    </ul>
+    <div class="navbar-right">
+      <ul class="nav navbar-nav">
+        <li ng-show="!loggedIn"><a href="#/login">Login</a></li>
+        <li ng-show="loggedIn"><a href="#/" ng-click="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div><!-- /.navbar-collapse -->
+</nav><!-- /navbar -->

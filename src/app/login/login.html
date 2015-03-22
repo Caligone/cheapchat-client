@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div ng-include="'components/navbar/navbar.html'"></div>
+
+  <div class="jumbotron text-center">
+    <h1>Hi !</h1>
+    <form ng-submit="login()" class="col-md-6 col-md-offset-3">
+      <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="barbecue42@wescm.sexy" ng-model="user.email"/>
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fui-lock"></i></span>
+        <input type="password" class="form-control" placeholder="************" ng-model="user.password"/>
+      </div>
+
+
+      <input type="submit" class="btn btn-lg btn-success" value="Log me !">
+    </form>
+    <div class="clearfix"></div>
+    <button class="btn btn-lg btn-info" ng-click="signup()">Signup !</button>
+  </div>
+
+  <hr>
+
+</div>

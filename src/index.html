@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CheapChat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- bower:css -->
+    <!-- run `gulp wiredep` to automaticaly populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <!-- css files will be automaticaly insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-app="CheapChat">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div ng-view></div>
+    <!-- /.container -->
+
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!-- build:js(src) scripts/vendor.js -->
+      <!-- bower:js -->
+      <!-- run `gulp wiredep` to automaticaly populate bower script dependencies -->
+      <!-- endbower -->
+      <!-- endbuild -->
+
+      <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+      <!-- inject:js -->
+      <!-- js files will be automaticaly insert here -->
+      <!-- endinject -->
+
+      <!-- inject:partials -->
+      <!-- angular templates will be automatically converted in js and inserted here -->
+      <!-- endinject -->
+      <!-- endbuild -->
+      <script src="http://localhost:1337/js/dependencies/sails.io.js"></script>
+      <script>
+        io.sails.url = 'http://localhost:1337';
+      </script>
+  </body>
+</html>
